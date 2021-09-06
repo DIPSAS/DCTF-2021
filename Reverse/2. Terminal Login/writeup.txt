@@ -1,0 +1,4 @@
+To find the password or the username just use the >strings function in unix (bash)
+This will give the username: Dips-CTF and password: eHealth
+
+The flag is: d:ctf{eHealth_a_way_of_thinking}
