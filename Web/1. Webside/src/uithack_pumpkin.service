@@ -1,0 +1,12 @@
+[Unit]
+Description=UiTHack Web5 server
+After=network.target
+
+[Service]
+Type=simple
+User=unicorn
+WorkingDirectory=/srv/web5/src
+ExecStart=/home/unicorn/.local/bin/gunicorn -w 4 -b 0.0.0.0:7589 server:app
+
+[Install]
+WantedBy=multi-user.target

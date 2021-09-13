@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+
+        <title>UiTHack 2020</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="icon" href="/static/favicon.ico" />
+    </head>
+    <body>
+        
+
+            <h1>UiTHack 2020</h1>
+            <h3>Welcome to the Pumpkin Madness</h3>
+        
+        <div>
+            <form action="/spooky" method="POST">
+                <button name="clickTry" type="submit" class="buttonCool">Try here</button>
+            </form>
+            <form action="/ghost" method="POST">
+                <button name="clickClick" type="submit" class="buttonCool">Click me</button>
+            </form>
+            <form action="/pizza" method="POST">
+                <button name="clickHit" type="submit" class="buttonCool">Hit me up</button>
+            </form>  
+        </div>
+        
+    </body>
+</html>
