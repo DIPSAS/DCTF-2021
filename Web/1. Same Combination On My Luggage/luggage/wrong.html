@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Same Combination On My Luggage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div class="card border-0 shadow rounded-3 my-5">
+            <div class="card-body p-4 p-sm-5">
+              <h5 class="card-title text-center mb-5 fw-light fs-5">Sign In</h5>
+              <form action="signin">
+                <div class="alert alert-danger" role="alert">
+                  Wrong username or password.
+                </div>
+                <div class="form-floating mb-3">
+                  <input class="form-control" name="username" id="floatingInput" placeholder="guest">
+                  <label for="floatingInput">Username</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <div class="d-grid">
+                  <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign
+                    in</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card border-0 shadow rounded-3 my-5">
+              <div class="card-body p-4 p-sm-5">
+                <h5 class="card-title text-center mb-5 fw-light fs-5">Create account</h5>
+                <form>
+                  <div class="form-floating mb-3">
+                    <input  class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Username</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <div class="alert alert-warning" role="alert">
+                    Passwords must satisfy the following requirements:
+                    <ul>
+                        {{ .HintComments }}
+                        <li>Can't be one of the <a href="https://www.pcmag.com/news/2020s-most-common-passwords-are-laughably-insecure">top 10 most popular passwords</a></li>
+                        <li>Must have at least one number</li>
+                        <li>Must have at least one lowercase letter</li>
+                        <li>Must have at least one capital letter</li>
+                        <li>Must be at least 7 characters long</li>
+                        <li>Must be at most 8 characters long</li>
+                    </ul>
+                  </div>
+                  <div class="alert alert-danger" role="alert">
+                    Signups are currently closed.
+                  </div>
+                  <div class="d-grid">
+                    <button class="btn btn-primary btn-login text-uppercase fw-bold btn-disabled" disabled>Create account</button>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+    </div>
+  </body>
+  
+
+</html>
