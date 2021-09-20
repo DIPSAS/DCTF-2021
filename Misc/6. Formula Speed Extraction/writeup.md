@@ -4,13 +4,22 @@ By extracting the zip archives, either manually or through an automated process,
 ## Solution 1
 One suggested solution using `python` to extract the files can be found [here](examples/zip_decompression.py).
 
+Run the script (it must be in the same folder as the zip file):
+
+```
+$ python zip_decompression.py
+```
+
 ## Solution 2
 You might also use `bash` to extract the files, which could be found [here](examples/zip_decompression.sh).
 
 Run the script (it must be in the same folder as the zip file):
+
 ```
 $ sh zip_decompression.sh formula-1337.zip ; cat *.txt ; echo ""
 ```
+
+
 ## Solution 3
 Manually extract the files.
 
