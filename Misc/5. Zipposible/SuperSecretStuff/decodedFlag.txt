@@ -1,0 +1,3 @@
+hehe, my secret is still safe because of my friend 'Endian' scrambled it for me
+
+flag	:dtc{fymz pif li eaw socpmorimes!d}!
