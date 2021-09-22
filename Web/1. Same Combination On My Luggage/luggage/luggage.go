@@ -37,7 +37,7 @@ type Contents struct {
 
 func main() {
 	body := Contents{
-		HintComments: template.HTML("<!-- <li>Can't be one of the top 20 most popular passwords</li>--><!-- TODO: Can someone explain why Admin doesn't want us to exclude all of the common passwords? --><!-- For some reason, Admin got very upset when I suggested excluding the top 20... -->"),
+		HintComments: template.HTML("<!-- <li>Can't be one of the top 20 most popular passwords</li>--><!-- TODO: Can someone explain why admin doesn't want us to exclude all of the common passwords? --><!-- For some reason, admin got very upset when I suggested excluding the top 20... -->"),
 	}
 
 	index := template.Must(template.ParseFiles("index.html"))
@@ -56,5 +56,5 @@ func main() {
 		index.Execute(w, body)
 	})
 
-	http.ListenAndServe(":80", nil)
+	http.ListenAndServe("0.0.0.0:80", nil)
 }
