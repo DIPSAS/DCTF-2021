@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+  web1:
+    build: "Web/1. Password Police/"
+    ports:
+      - "9990:80"
+  web2:
+    build: "Web/2. Shoulders Knees and Toes"
+    ports:
+      - "9991:80"
+  web3:
+    build: "Web/3. DIR Straits/"
+    ports:
+      - "9992:80"
+  web4:
+    build: "Web/4. Admin Panel Login/"
+    ports:
+      - "9993:80"
+  misc2:
+    build: "Misc/2. Abort Retry Succeed/"
+    ports:
+      - "9994:80"
